@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import PlanetsInfo from "./PlanetsInfo";
 import PlanetDetails from "./PlanetDetails";
-
+import Sun from "./Sun";
+import Orbit from "./Orbit";
 
 const PlanetsPage = () => {
 
@@ -19,6 +20,7 @@ const PlanetsPage = () => {
           (item) => { return item.isPlanet == true })
         setPlanets(planets)
       })
+      .catch(error => { console.log (error)})
   }
 
   function handleClick(planet) {
@@ -26,10 +28,28 @@ const PlanetsPage = () => {
     //console.log(planet)
   }
 
+console.log(planets)
 
   return (
     <>
-      <PlanetsInfo planets={planets} handleClick={handleClick} selectedPlanet={selectedPlanet} />      
+      <PlanetsInfo planets={planets} handleClick={handleClick} selectedPlanet={selectedPlanet} />
+
+      <div className='solar-system'>
+
+<Sun />
+{Orbit("mercury-orbit", "mercury")}
+{Orbit("venus-orbit", "venus")}
+{Orbit("earth-orbit", "earth")}
+{Orbit("mars-orbit", "mars")}
+{Orbit("jupiter-orbit", "jupiter")}
+{Orbit("saturn-orbit", "saturn")}
+{Orbit("neptune-orbit", "neptune")}
+{Orbit("uranus-orbit", "uranus")}
+
+
+
+</div>
+
     </>
 
 
