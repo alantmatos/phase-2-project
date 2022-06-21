@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* ////
+
+testing styles
+
+//// */
+
+.planet-details {
+  color:#4c7f8e;
+  border-style: solid;
+}
+
+.planet-button{
+  background-color: aliceblue;
+}
+
+.App{
+  display: flex;
+  flex-direction: row;
+}
