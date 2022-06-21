@@ -3,11 +3,8 @@ import PlanetsPage from './/components/PlanetsPage';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="App">      
       <PlanetsPage />
-
-
     </div>
   );
 }

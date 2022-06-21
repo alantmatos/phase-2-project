@@ -3,7 +3,6 @@ import PlanetsInfo from "./PlanetsInfo";
 import PlanetDetails from "./PlanetDetails";
 
 
-
 const PlanetsPage = () => {
 
   const [planets, setPlanets] = useState([{}])
@@ -32,6 +31,8 @@ const PlanetsPage = () => {
     <>
       <PlanetsInfo planets={planets} handleClick={handleClick} selectedPlanet={selectedPlanet} />      
     </>
+
+
   );
 }
 
