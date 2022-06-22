@@ -41,4 +41,44 @@ testing styles
   color: coral;
 }
 
+.nav-bar div{
+  
+  
+  width: 150px;
+  height: 40px;
+  background-color: #4c7f8e;
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  
+}
 
+.nav-bar{
+  margin-top: 750px;
+  
+}
+
+.api{
+color: white;
+height: 230px;
+width: 300px;
+margin-top: -700px;
+
+}
+.api span{
+  font-size: 15px;
+  color:coral
+}
+
+
+.about-us{
+  color: white;
+  height: 230px;
+  width: 300px;
+  margin-top: -700px;
+  
+  }
+  .about-us span{
+    font-size: 15px;
+    color:coral
+  }
