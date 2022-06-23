@@ -5,11 +5,13 @@ const PlanetDetails = ({ planet }) => {
         <div className='planet-details'>           
 
             <h3 className={planet.englishName}> {planet.englishName}</h3>
-            <p> discovered By: {planet.discoveredBy}</p>
-            <p> discovery Date: {planet.discoveryDate}</p>
+            <p> Discovered By: {planet.discoveredBy}</p>
+            <p> Discovery Date: {planet.discoveryDate}</p>
             <p> Avg Temperature Kevin: {planet.avgTemp}</p>
-            <p> bodyType: {planet.bodyType}</p>
-            <p> gravity: {planet.gravity}</p>
+            <p> BodyType: {planet.bodyType}</p>
+            <p> Gravity: {planet.gravity}</p>
+            <p> Density: {planet.density}</p>            
+            <p> Dimension: {planet.dimension}</p>
             
             </div>
     )
