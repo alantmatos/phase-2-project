@@ -24,9 +24,11 @@ const Form = ({ fetchJson }) => {
       .then(() => {
 
         console.log('Planets Added')
-        history.push("/home")
+        
         fetchJson()
       })
+      
+      history.push("/home")
   };
 
 
