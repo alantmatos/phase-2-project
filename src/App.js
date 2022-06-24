@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import About from './components/About';
 import AboutTheAPI from './components/AboutTheAPI';
 import Home from './components/Home';
+import Form from './components/Form';
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
             </Route>
             <Route path="/about-the-api">
               <AboutTheAPI />
+            </Route>
+            <Route path="/form">
+              <Form />
             </Route>
           </Switch>
         </div>

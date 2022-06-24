@@ -54,7 +54,11 @@ testing styles
 }
 
 .nav-bar{
-  margin-top: 750px;
+  margin-top: 797px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
   
 }
 
@@ -62,7 +66,7 @@ testing styles
 color: white;
 height: 230px;
 width: 300px;
-margin-top: -700px;
+margin-top: -600px;
 
 }
 .api span{
@@ -75,10 +79,19 @@ margin-top: -700px;
   color: white;
   height: 230px;
   width: 300px;
-  margin-top: -700px;
+  margin-top: -600px;
   
   }
   .about-us span{
     font-size: 15px;
     color:coral
+  }
+
+  
+.form{
+  color: white;
+  height: 230px;
+  width: 300px;
+  margin-top: -700px;
+  
   }

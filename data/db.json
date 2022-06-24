@@ -1,0 +1,92 @@
+{
+  "planets": [
+    {
+      "name": "Uranus",
+      "discoveredBy": "William Herschel",
+      "discoveredDate": "13/03/1781",
+      "temperature": "76",
+      "bodyType": "Planet",
+      "gravity": "8.87",
+      "density": "1.27",
+      "dimension": "3.121 billion mi²",
+      "id": 1
+    },
+    {
+      "name": "Neptune",
+      "discoveredBy": "Urbain Le Verrier, John Couch Adams, Johann Galle",
+      "discoveredDate": "23/09/1846",
+      "temperature": "55",
+      "bodyType": "Planet",
+      "gravity": "11.15",
+      "density": "1.638",
+      "dimension": "30,598",
+      "id": 2
+    },
+    {
+      "name": "Jupiter",
+      "discoveredBy": "",
+      "discoveredDate": "",
+      "temperature": "165",
+      "bodyType": "Planet",
+      "gravity": "24.79",
+      "density": "1.3262",
+      "dimension": "23.71 billion mi²",
+      "id": 3
+    },
+    {
+      "name": "Mars",
+      "discoveredBy": "",
+      "discoveredDate": "",
+      "temperature": "210",
+      "bodyType": "Planet",
+      "gravity": "3.71",
+      "density": "3.9341",
+      "dimension": "55.91 million mi²",
+      "id": 4
+    },
+    {
+      "name": "Mercury",
+      "discoveredBy": "",
+      "discoveredDate": "",
+      "temperature": "440",
+      "bodyType": "Planet",
+      "gravity": "3.7",
+      "density": "5.4291",
+      "dimension": "28.88 million mi²",
+      "id": 5
+    },
+    {
+      "name": "Saturn",
+      "discoveredBy": "",
+      "discoveredDate": "",
+      "temperature": "134",
+      "bodyType": "Planet",
+      "gravity": "10.44",
+      "density": "0.6871",
+      "dimension": "16.49 billion mi²",
+      "id": 6
+    },
+    {
+      "name": "Earth",
+      "discoveredBy": "",
+      "discoveredDate": "",
+      "temperature": "288",
+      "bodyType": "Planet",
+      "gravity": "9.8",
+      "density": "5.5136",
+      "dimension": "196.9 million mi²",
+      "id": 7
+    },
+    {
+      "name": "Venus",
+      "discoveredBy": "",
+      "discoveredDate": "",
+      "temperature": "737",
+      "bodyType": "Planet",
+      "gravity": "8.87",
+      "density": "5.243",
+      "dimension": "177.7 million mi²",
+      "id": 8
+    }
+  ]
+}

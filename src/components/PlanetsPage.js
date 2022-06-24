@@ -3,56 +3,54 @@ import PlanetsInfo from "./PlanetsInfo";
 import PlanetDetails from "./PlanetDetails";
 import Sun from "./Sun";
 import Orbit from "./Orbit";
+import Form from "./Form";
+import NavBar from "./NavBar";
 
 const PlanetsPage = () => {
 
   const [planets, setPlanets] = useState([{}])
-  const [selectedPlanet, setSelecetdPlanet] = useState([{}])
+  const [selectedPlanet, setSelecetdPlanet] = useState([{}])  
+  
 
+  useEffect(() => { fethPlanets() }, [])
 
-  useEffect(() => { fethAPlanets() }, [])
-
-  const fethAPlanets = () => {
-    fetch('https://api.le-systeme-solaire.net/rest/bodies')
+  const fethPlanets = () => {
+    fetch('http://localhost:8000/planets')
       .then(response => response.json())
-      .then((json) => {
-        const planets = json.bodies.filter(
-          (item) => { return item.isPlanet == true })
-        setPlanets(planets)
-      })
-      .catch(error => { console.log (error)})
+      .then((json) => {setPlanets(json)})
+      .catch(error => { console.log (error)})   
   }
 
   function handleClick(planet) {
     setSelecetdPlanet(planet)
-    //console.log(planet)
   }
 
-console.log(planets)
+  function fetchJson () {
+
+    fetch("http://localhost:8000/planets")
+    .then(response => response.json())
+    .then(data =>{
+      setPlanets([...planets,data])
+      fethPlanets()
+    })
+ }
 
   return (
     <>
-      <PlanetsInfo planets={planets} handleClick={handleClick} selectedPlanet={selectedPlanet} />
+      <PlanetsInfo planets={planets} handleClick={handleClick} selectedPlanet={selectedPlanet} fetchJson={fetchJson}  />      
 
       <div className='solar-system'>
-
-<Sun />
-{Orbit("mercury-orbit", "mercury")}
-{Orbit("venus-orbit", "venus")}
-{Orbit("earth-orbit", "earth")}
-{Orbit("mars-orbit", "mars")}
-{Orbit("jupiter-orbit", "jupiter")}
-{Orbit("saturn-orbit", "saturn")}
-{Orbit("neptune-orbit", "neptune")}
-{Orbit("uranus-orbit", "uranus")}
-
-
-
-</div>
-
+        <Sun />
+          {Orbit("mercury-orbit", "mercury")}
+          {Orbit("venus-orbit", "venus")}
+          {Orbit("earth-orbit", "earth")}
+          {Orbit("mars-orbit", "mars")}
+          {Orbit("jupiter-orbit", "jupiter")}
+          {Orbit("saturn-orbit", "saturn")}
+          {Orbit("neptune-orbit", "neptune")}
+          {Orbit("uranus-orbit", "uranus")}
+      </div>
     </>
-
-
   );
 }
 
